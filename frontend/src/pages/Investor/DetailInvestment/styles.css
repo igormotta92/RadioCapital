@@ -1,0 +1,53 @@
+
+.main-detail-investiment .content-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.main-detail-investiment .title-header {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main-detail-investiment .title-header p{
+
+    color: white;
+    font-size: 18px;
+    font-weight: var(--font-weight-thin);
+}
+
+.main-detail-investiment .content-ivestment{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px;
+}
+
+.main-detail-investiment .content-ivestment .detail-invest{
+    margin-top: 28px;
+    font-size: var(--font-size-18);
+    color: var(--text-color-beige);
+}
+
+.main-detail-investiment .content-ivestment .detail-invest p{
+    padding: 5px 0px;
+}
+.main-detail-investiment .content-ivestment .check-payments h2{
+    color: var(--text-color-beige);
+    font-size: var(--font-size-24);
+}
+.main-detail-investiment .content-ivestment .list-check-payments{
+    margin-top: 28px;
+    margin-bottom: 50px;
+}
+.main-detail-investiment .content-ivestment .list-check-payments ul{ 
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 0px 15px;
+    margin: 2px 0px;
+    background-color: var(--bg-color-variant);
+    border-radius: 10px;
+}

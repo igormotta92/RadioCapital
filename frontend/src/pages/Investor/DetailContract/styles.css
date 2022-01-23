@@ -1,0 +1,12 @@
+.main-detail-contract .content-contract{
+    margin-top: 28px;
+}
+
+.main-detail-contract .content-contract p{
+    font-size: var(--font-size-18);
+    margin: 15px 0px;
+}
+
+.main-detail-contract .title-header p{
+    color: #7c7c7c;
+}

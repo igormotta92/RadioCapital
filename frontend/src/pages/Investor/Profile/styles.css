@@ -1,0 +1,116 @@
+.container-login {
+  align-items: flex-start;
+}
+
+main .title-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  animation-name: up;
+  animation-duration: 1s;
+}
+main .title-header .h1-profile {
+  color: white;
+  font-weight: var(--font-weight-thin);
+  font-size: var(--font-size-36);
+  padding: 0px;
+}
+main .title-header .select-contract {
+  margin-left: 10px;
+  background-color: var(--bg-color-05);
+  border: 0px;
+  border-radius: 10px;
+  box-shadow: var(--shadow-bottom);
+  padding: 2px 15px;
+  color: var(--text-color-beige);
+}
+
+main .content-projection {
+  max-width: 900px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: var(--bg-color-05);
+  box-shadow: var(--shadow-bottom);
+  margin: 28px auto;
+}
+
+main .content-projection p {
+  color: white;
+  background-color: transparent;
+  font-size: 12px;
+  padding: 10px;
+}
+
+main .content-projection button {
+  margin-top: 5px;
+  color: var(--bg-color-button);
+  border: 1px var(--bg-color-05) solid;
+  float: right;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: var(--font-size-12);
+  background-color: var(--bg-color);
+}
+
+main h2 {
+  margin-top: var(--margin-title);
+  color: white;
+  font-weight: var(--font-weight-thin);
+  font-size: var(--font-size-36);
+}
+
+main .content-list-contract {
+  margin-top: var(--margin-title);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .content-list-contract .indices-list {
+  width: 100%;
+  padding: 0px 30px;
+}
+
+main .content-list-contract .indices-list p {
+  color: var(--text-color-beige);
+}
+
+main .content-list-contract .list-contract {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: separate;
+  border-spacing: 2px 10px;
+  margin: 0 0 0 0;
+  border-radius: 10px;
+}
+
+main .content-list-contract .list-contract thead tr {
+  background-color: transparent;
+  box-shadow: none;
+  color: var(--text-color-beige);
+  font-size: 14px;
+}
+
+main .content-list-contract .list-contract tbody tr {
+  background-color: var(--bg-color-05);
+  box-shadow: var(--shadow-bottom);
+}
+
+main .content-list-contract .list-contract td {
+  /* width: 100%; */
+  background: transparent;
+  margin-top: 5px;
+  /* padding: 5px 10px; */
+  padding: 10px 15px;
+  text-align: center;
+}
+
+main .content-list-contract .list-contract td p {
+  background-color: transparent;
+  color: white;
+  font-size: 13px;
+  padding: 0px;
+  white-space: nowrap;
+}

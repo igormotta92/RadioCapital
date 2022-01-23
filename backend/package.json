@@ -1,0 +1,44 @@
+{
+  "name": "system-radio-capital-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sql_migration": "cross-env NODE_ENV=development  sequelize db:migrate",
+    "sql_seed_all": "cross-env NODE_ENV=development  sequelize db:seed:all",
+    "start": "cross-env NODE_ENV=development nodemon --inspect src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fnando/cpf": "^1.0.1",
+    "@google-cloud/storage": "^5.18.0",
+    "bcrypt": "^4.0.1",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.2",
+    "express-useragent": "^1.0.13",
+    "jsonwebtoken": "^8.5.1",
+    "module-alias": "^2.2.2",
+    "moment": "^2.26.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.4",
+    "mysql2": "^2.3.3",
+    "nodemailer": "^6.7.2",
+    "nodemailer-express-handlebars": "^4.0.0",
+    "rotating-file-stream": "^2.1.6",
+    "sequelize": "^5.22.5",
+    "sequelize-cli": "^5.5.1",
+    "winston": "^3.4.0",
+    "winston-daily-rotate-file": "^4.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "_moduleAliases": {
+    "@": "."
+  }
+}

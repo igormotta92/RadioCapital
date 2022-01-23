@@ -1,0 +1,48 @@
+.Loading{
+    position:absolute;
+    background:black;
+    opacity:0.5;
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center
+
+    
+}
+
+.Loading .content-loading{
+    width: 150px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.Loading .item-loading{
+    width: 15px;
+    height: 15px;
+    background-color: var(--text-color-beige);
+    border-radius: 20px;
+    animation-name: loading;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.Loading h1{
+    opacity: 1;
+    animation-name: loadingh1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loading {
+    0% {margin-left: 0;}
+    50% {margin-left: 150px;}
+    100% {margin-left: 0px;}
+  }
+
+  @keyframes loadingh1 {
+    0% {opacity:  0;}
+    50% {opacity: 1;}
+    100% {opacity:  0;}
+  }

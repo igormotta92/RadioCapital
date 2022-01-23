@@ -1,0 +1,22 @@
+version: "2"
+
+services:
+  mysql:
+    container_name: postgres_radio
+    image: postgres
+    environment:
+      - POSTGRES_PASSWORD=desenv
+      - POSTGRES_DB=radio_corretora
+    ports:
+      - "3306:3306"
+    networks:
+      rede:
+        ipv4_address: 10.5.0.4
+
+networks:
+  rede:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.5.0.0/16
+          gateway: 10.5.0.1

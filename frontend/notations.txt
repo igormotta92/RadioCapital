@@ -1,0 +1,3 @@
+[package.json]
+  - Browserslist: (https://stackoverflow.com/questions/55510405/what-is-the-significance-of-browserslist-in-package-json-created-by-create-react)
+      Limitar navegadores e assim produzir bundles otimizados.

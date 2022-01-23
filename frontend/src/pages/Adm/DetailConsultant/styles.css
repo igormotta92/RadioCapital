@@ -1,0 +1,133 @@
+.main-ivestors .content-form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.main-ivestors .title-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+.main-ivestors .title-header p {
+  color: white;
+  font-size: 16px;
+  font-weight: var(--font-weight-thin);
+}
+.main-ivestors .name_user {
+  color: white;
+  font-size: 16px;
+}
+.main-ivestors .detail-consultant .enviar-mensage button {
+  background-color: white;
+  border: 0px;
+  border-radius: 10px;
+  padding: 8px 15px;
+  color: black;
+  margin: 10px 1px;
+  box-shadow: var(--shadow-bottom);
+}
+.main-ivestors .detail-consultant .projection button {
+  background-color: white;
+  border: 0px;
+  border-radius: 10px;
+  padding: 8px 43px;
+  color: black;
+  margin: 10px 1px;
+  box-shadow: var(--shadow-bottom);
+}
+.main-ivestors .content-detail-consultant {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px;
+}
+
+.main-ivestors .content-detail-consultant .detail-consultant {
+  margin-top: 28px;
+  font-size: var(--font-size-18);
+  color: var(--text-color-beige);
+  font-size: 16px;
+}
+.main-ivestors .content-detail-consultant .detail-consultant p {
+  margin: 5px;
+}
+
+.main-ivestors .content-contracts {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-ivestors .content-contracts .list-contracts {
+  display: flex;
+  flex-direction: column;
+  margin: 28px 0px;
+}
+
+.main-ivestors .content-contracts .list-contracts .contracts {
+  background-color: #0a0a0a;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  margin-top: 5px;
+}
+
+.main-ivestors .content-contracts .list-contracts .contracts .header-contract {
+  color: var(--text-color-beige);
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  align-items: center;
+}
+.main-ivestors
+  .content-contracts
+  .list-contracts
+  .contracts
+  .header-contract
+  .button-controler-contract {
+  margin: 10px;
+}
+.main-ivestors
+  .content-contracts
+  .list-contracts
+  .contracts
+  .header-contract
+  p {
+  margin: 15px;
+}
+.main-ivestors .content-contracts .list-contracts .contracts .article-contract {
+  padding: 20px;
+}
+.main-ivestors .content-contracts .list-contracts .contracts p {
+  margin: 20px;
+}
+
+.main-ivestors .content-contracts .list-contracts .contracts .time-contract {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*adm*/
+
+.detail-pay {
+  float: right;
+  color: white;
+  font-weight: 400;
+  background-color: var(--text-color-beige);
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 1);
+  padding: 8px 12px;
+  border: 0px;
+}
+.action-button-detail {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

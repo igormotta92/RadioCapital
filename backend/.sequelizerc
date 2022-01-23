@@ -1,0 +1,67 @@
+const path = require('path');
+const fs = require('fs');
+// const { exit } = require('process');
+
+let pathEnv
+try {
+  pathEnv = path.resolve(__dirname, `.env.${process.env.NODE_ENV}.local`);
+  fs.accessSync(pathEnv);
+} catch (err) {
+  pathEnv = path.resolve(__dirname, `.env`);
+}
+
+// console.log('xxxxxxxxxxxxx', process.env.NODE_ENV);
+// process.exit();
+
+require('dotenv').config({
+  path: pathEnv,
+});
+
+module.exports = {
+  //config: path.resolve(__dirname, 'src', 'config', 'database.js'),
+  config: path.resolve(__dirname, 'src/config/database.js'),
+  'migrations-path': path.resolve(__dirname, 'src/database/migrations'),
+  'seeders-path': path.resolve(__dirname, 'src/database/seeders'),
+}
+
+/**
+ * insert users (login, email, `password`, `name`, is_admin, created_at, updated_at)
+ * value ('admin', 'admin@gmail.com', '123', 'administrador', 1, now(), now());
+ */
+
+//https://medium.com/@diomalta/migrations-e-seeders-no-sequelizejs-67ba3571ed0e
+
+/**
+ * Migrations
+ *
+ * Para poder usar o sequelize-cli "npm sequelize db:<cmd>"
+ *
+ * yarn sequelize db:create (Criar Data Base com dados de confiduração)
+ * yarn sequelize migration:create --name=create-users (Cria uma nova migration)
+ * yarn sequelize db:migrate (Executa as migrations)
+ * yarn sequelize db:migrate:undo (Desfaz a ultima migration executada (em produção não usar))
+ * yarn sequelize db:migrate:undo:all (Defaz todas as migrations)
+ *
+ * yarn sequelize migration:create --name=create-users
+
+ /** Seeders
+  *
+  * yarn sequelize seed:generate --name <name>
+  * yarn sequelize db:seed --seed <name seed, ex: 20200520181200-teste>
+  * yarn sequelize db:seed:all
+  * yarn sequelize db:seed:undo
+  * yarn sequelize db:seed:undo:all
+  *
+  * yarn sequelize seed:generate --name users-admin
+  * yarn sequelize seed:generate --name users-admin
+  *
+  */
+
+/**
+ * Relationship
+ *
+* Table A e Table B
+* belongsTo [1:1] - Chave estrageira definida em A
+* hasOne [1:1] - Chave estrangeira definida em B
+* hasMany [1:N] - Chave estrangeira definida em B
+*/

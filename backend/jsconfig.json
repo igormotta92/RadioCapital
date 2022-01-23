@@ -1,0 +1,26 @@
+/** 
+ * IntelliSense in Visual Studio Code
+ *
+ * Arquivo ajuda o IntelliSense do Visual a code entender algumas 
+ * configurações feita no sistema com a criação de alias para os
+ * includes (required)
+ * 
+ * https://code.visualstudio.com/docs/languages/jsconfig
+ * https://github.com/storybookjs/storybook/issues/7205
+ * https://medium.com/@caludio/how-to-use-module-path-aliases-in-visual-studio-typescript-and-javascript-e7851df8eeaa
+ * https://medium.com/@justintulk/solve-module-import-aliasing-for-webpack-jest-and-vscode-74007ce4adc9
+ * 
+ */
+
+{
+  "compilerOptions": {
+    //"module": "commonjs",
+    //"target": "es6",
+    //"declaration": true,
+    "baseUrl": "./",
+    "paths": {
+      "@*": [".*"]
+    }
+  },
+  "exclude": [ "node_modules" ]
+}
